@@ -1,0 +1,93 @@
+@font-face {
+  font-family: Copperhead;
+  src: url(/Copperhead\ Condensed_Demo.ttf);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: Copperhead;
+}
+
+body {
+  padding: 10px 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* necessário para o pseudo-elemento */
+  min-height: 100vh;
+  /* overflow: hidden; */
+  gap: 100px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/backgroundjornal.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: saturate(0); /* deixa o fundo preto e branco */
+  z-index: -1; /* mantém o fundo atrás do conteúdo */
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 101vh;
+  background-image: url(/Old\ Film\ Grain\ _\ Video\ overlay\ \(Download\).mp4);
+  opacity: 20%;
+  pointer-events: none;
+}
+
+nav{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  box-shadow: 0 2px black;
+  backdrop-filter: blur(10px);
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 2rem;
+}
+
+h1{
+  font-size: 8rem;
+  margin-top: 200px;
+}
+
+aside p{
+  font-size: 1.7rem;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+
+.firstPage{
+  width: 100%;
+  display: flex;
+  font-size: 1.7rem;
+  gap: 20px;
+  text-align: justify;
+  line-height: 50px;
+}
+
+.left{
+  width: 50%;
+}
+.right{
+  width: 50%;
+}
