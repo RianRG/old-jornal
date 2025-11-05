@@ -27,7 +27,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('/backgroundjornal.jpeg');
+  background-image: url('./backgroundjornal.jpeg');
   background-size: cover;
   background-position: center;
   filter: saturate(0); /* deixa o fundo preto e branco */
@@ -39,7 +39,7 @@ body::before {
   top: 0;
   z-index: 1000;
   height: 101vh;
-  background-image: url(/Old\ Film\ Grain\ _\ Video\ overlay\ \(Download\).mp4);
+  background-image: url('./Old\ Film\ Grain\ _\ Video\ overlay\ \(Download\).mp4');
   opacity: 20%;
   pointer-events: none;
 }
