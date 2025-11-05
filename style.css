@@ -12,7 +12,7 @@
 }
 
 body {
-  padding: 10px 15%;
+  padding: 10px 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +32,11 @@ body::before {
   background-position: center;
   filter: saturate(0); /* deixa o fundo preto e branco */
   z-index: -1; /* mantém o fundo atrás do conteúdo */
+}
+.credits{
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding: 10px;
 }
 
 .overlay{
@@ -66,7 +71,6 @@ nav ul{
 
 h1{
   font-size: 8rem;
-  margin-top: 200px;
   white-space: nowrap;
 }
 
@@ -75,6 +79,7 @@ aside p{
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   padding: 20px;
+  text-align: justify;
 }
 
 main{
@@ -107,6 +112,18 @@ main span{
   padding-top: 20px;
 }
 
+.headline{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.headline p{
+  font-size: 2rem;
+}
+
 @media (max-width: 1665px){
 
   h1{
@@ -118,5 +135,13 @@ main span{
 @media (max-width: 1200px){
   h1{
     white-space: normal;
+  }
+
+  nav ul{
+    font-size: 1.4rem;
+  }
+
+  aside{
+    line-height: 30px;
   }
 }
